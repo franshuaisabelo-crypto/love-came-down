@@ -1,0 +1,118 @@
+/* ============================================
+   Design Tokens — Love Came Down
+   Zion Baptist Church, Iloilo City
+   Night-sky palette — edit here to retheme everything.
+   ============================================ */
+
+:root {
+  /* ---- Palette ---- */
+  --midnight-black:  #080D18;   /* nav, footer, page bg, darkest sections  */
+  --royal-blue:      #173D83;   /* alternate section backgrounds            */
+  --deep-blue:       #0F2A5C;   /* card surfaces, deeper accent bg          */
+  --starlight-blue:  #6D91CE;   /* accents, links, icons, large text only   */
+  --antique-gold:    #C6A15B;   /* primary buttons, borders, highlights     */
+  --champagne:       #F0D9A5;   /* headings on dark, soft highlights        */
+
+  /* ---- Semantic color aliases ---- */
+  /* Buttons */
+  --color-primary-orange:   var(--antique-gold);    /* gold fill CTA         */
+  --color-text-on-orange:   var(--midnight-black);  /* dark text on gold     */
+
+  /* Text */
+  --color-text-primary:     var(--champagne);        /* headings on dark bg  */
+  --color-text-secondary:   rgba(240, 217, 165, 0.80); /* body on dark, 80%  */
+  --color-text-on-dark:     var(--champagne);
+  --color-text-link:        var(--starlight-blue);
+
+  /* Backgrounds */
+  --color-bg-page:          var(--midnight-black);
+  --color-bg-alt:           var(--royal-blue);
+  --color-bg-footer:        var(--midnight-black);
+  --color-bg-card:          var(--deep-blue);
+
+  /* Borders */
+  --color-border:           rgba(198, 161, 91, 0.25);  /* gold at 25%        */
+  --color-border-gold:      rgba(198, 161, 91, 0.40);  /* gold at 40%        */
+  --color-border-strong:    var(--antique-gold);       /* full-strength gold  */
+
+  /* Focus / misc */
+  --color-focus-ring:  var(--champagne);
+  --color-overlay:     rgba(8, 13, 24, 0.80);          /* midnight overlay    */
+  --color-gold:        var(--antique-gold);
+
+  /* Legacy aliases kept so no component breaks */
+  --color-white:            #FFFFFF;
+  --color-charcoal:         rgba(240, 217, 165, 0.60);
+  --color-deep-sky:         var(--starlight-blue);
+  --color-deep-brown:       var(--midnight-black);
+  --color-light-sky:        var(--royal-blue);
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows — none; thin gold borders only ---- */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  /* ---- Typography ---- */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', 'DM Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+  --text-6xl:  3.75rem;    /* 60px */
+  --text-7xl:  4.5rem;     /* 72px */
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;      /* floor for body text */
+
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+
+  /* ---- Transitions ---- */
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   350ms;
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Layout ---- */
+  --container-max:     1200px;
+  --container-padding: var(--space-6);
+  --nav-height:        72px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: var(--space-4);
+    --nav-height: 60px;
+  }
+}

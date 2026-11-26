@@ -3,8 +3,7 @@
    Zion Baptist Church, Iloilo City
    Edit this file to update site content.
    ============================================ */
-/* Poster image (fallback while video loads) */
-import posterImg from '../assets/poster.svg'
+
 export const siteInfo = {
   churchName: 'Zion Baptist Church',
   eventName: 'Love Came Down',
@@ -38,12 +37,7 @@ export const jotform = {
 export const buildingFund = {
   sectionId: 'about',
   title: 'Help Us Build a Permanent Home for Zion',
-  /*
-    Video: file lives in public/ so the browser fetches it directly.
-    To swap: drop your new video into public/, update this path.
-  */
-  videoSrc: 'https://pub-5492f035c705424c8b8a470ada893539.r2.dev/Zbc-Building-Overview-Web%281%29.mp4',
-  posterSrc: posterImg,
+  youtubeId: 'DrIaIb-aZGU',
   paragraphs: [
     'Zion Baptist Church has served Iloilo City for over twenty years. We started as a small group of believers. Today we\u2019re a church family built on faith, love, and serving others. We\u2019ve grown a lot. But we\u2019ve always met in rented spaces and borrowed halls. We\u2019ve never had a place of our own.',
     'That\u2019s what we\u2019re building now. A permanent worship center. It will have a sanctuary for Sunday services and classrooms for Bible study and youth programs. It will also have open areas for reaching out to our neighbors. Families will gather there. Children will learn there. Anyone in the community who needs hope will have a door to walk through.',
